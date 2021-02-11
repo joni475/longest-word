@@ -1,0 +1,7 @@
+function longestWord(sen){
+ return sen.split(" ").reduce((acc, val)=>{
+   return acc.length > val.length ? acc : val;
+ }) 
+}
+console.log(longestWord("JavaScript is an awesome web programming language"));
+// "programming
